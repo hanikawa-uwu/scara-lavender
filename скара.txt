@@ -1,0 +1,716 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap');
+ body {
+    background-color: #eee9ff !important;
+    background-image:radial-gradient(circle at 12px 12px, rgba(126,97,191,.14) 1.5px, transparent 2px),linear-gradient(90deg, rgba(176,153,226,.16) 1px, transparent 1px),linear-gradient(rgba(176,153,226,.16) 1px, transparent 1px) !important;
+    background-size: 28px 28px !important;
+    background-attachment: fixed !important;
+    font-family: Inter, Calibri, Arial, sans-serif !important;
+    color: #3c3152 !important;
+
+}
+ /* текст */
+ h1, h2, h3, h4 {
+     font-family: Inter, Calibri, Arial, sans-serif !important;
+     color: #6f55a8 !important;
+     font-weight: 800 !important;
+     letter-spacing: .3px !important;
+
+}
+ a {
+     color: #7658ba !important;
+     text-decoration: none !important;
+     font-weight: 700 !important;
+
+}
+ a:hover {
+     color: #4f3b82 !important;
+     text-decoration: underline dotted !important;
+
+}
+ .datebg::before {
+     content: "♡";
+     margin-right: 6px;
+     color: #b9a5e8;
+
+}
+ ::selection {
+     background: #cfc0f5;
+     color: #ffffff;
+
+}
+ /* скролл */
+ ::-webkit-scrollbar {
+     width: 10px;
+
+}
+ ::-webkit-scrollbar-track {
+     background: #eee9ff;
+
+}
+ ::-webkit-scrollbar-thumb {
+     background: #b9a5e8;
+     border-radius: 10px;
+     border: 2px solid #eee9ff;
+
+}
+ /* поля */
+ textarea, input[type="text"], input[type="password"], input[type="search"], select {
+     background: #fbf9ff !important;
+     border: 1.5px dashed #bda9eb !important;
+     border-radius: 8px !important;
+     color: #3c3152 !important;
+     font-family: Inter, Calibri, Arial, sans-serif !important;
+
+}
+ button, input[type="submit"], input[type="button"] {
+     background: #b9a5e8 !important;
+     color: #ffffff !important;
+     border: 1px solid #9275d0 !important;
+     border-radius: 8px !important;
+     padding: 6px 16px !important;
+     font-family: Inter, Calibri, Arial, sans-serif !important;
+     cursor: pointer;
+     box-shadow: 2px 2px 0 #7d61bf !important;
+
+}
+ button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+     background: #9d83dd !important;
+
+}
+ /* таблицы */
+ table {
+     background: #fbf9ff !important;
+     border: 1.5px solid #bda9eb !important;
+     border-radius: 14px !important;
+     box-shadow: 4px 4px 0 rgba(126, 97, 191, .22) !important;
+     overflow: hidden !important;
+
+}
+ td, tr {
+     background: transparent !important;
+     border: none !important;
+
+}
+ /* записи */
+ div.post-content {
+     background-color: #fbf9ff !important;
+     background-image: radial-gradient(circle at 18px 18px, rgba(142,112,209,.13) 1.4px, transparent 2px), radial-gradient(circle at 88% 12%, rgba(207,192,245,.45) 0, transparent 170px), radial-gradient(circle at 12% 90%, rgba(185,165,232,.32) 0, transparent 180px), linear-gradient(135deg, #ffffff 0%, #fbf9ff 38%, #f2ecff 100%) !important;
+     background-size: 26px 26px, auto, auto, auto !important;
+     border: 1.5px solid #bda9eb !important;
+     border-radius: 16px !important;
+     box-shadow: 0 0 0 4px rgba(245,241,255,.95), 5px 5px 0 rgba(126, 97, 191, .22), inset 0 1px 0 rgba(255,255,255,.9) !important;
+     padding: 18px !important;
+     position: relative !important;
+     overflow: hidden !important;
+
+}
+ /* верхняя мягкая полоска у записи */
+ div.post-content::before {
+     content: "";
+     position: absolute;
+     left: 14px;
+     right: 14px;
+     top: 0;
+     height: 5px;
+     background: linear-gradient(90deg, #b9a5e8, #e3d9ff, #b9a5e8);
+     border-radius: 0 0 12px 12px;
+     opacity: .85;
+
+}
+ /* маленький декоративный уголок */
+ div.post-content::after {
+     content: "✦";
+     position: absolute;
+     right: 14px;
+     top: 10px;
+     color: rgba(126,97,191,.40);
+     font-size: 22px;
+     font-weight: 800;
+
+}
+ /* левое меню */
+ .left-menu {
+     border: none !important;
+     outline: none !important;
+     box-shadow: none !important;
+
+}
+ .left-menu > div {
+     background: #fbf9ff !important;
+     border: 1.5px solid #bda9eb !important;
+     border-radius: 14px !important;
+     overflow: hidden !important;
+     margin-bottom: 12px !important;
+     box-shadow: 0 0 0 4px #f5f1ff, 3px 3px 0 rgba(126, 97, 191, .18) !important;
+
+}
+ /* заголовки левого меню */
+ h3.left-menu-text {
+     background: linear-gradient(90deg, #d8ccfa, #f4efff) !important;
+     color: #3c3152 !important;
+     border: none !important;
+     border-bottom: none !important;
+     box-shadow: none !important;
+     font-family: 'Nunito', Calibri, Arial, sans-serif !important;
+     font-weight: 800 !important;
+     text-transform: lowercase !important;
+     padding: 7px 12px !important;
+     margin: 0 !important;
+     border-radius: 0 !important;
+     position: relative !important;
+
+}
+ .left-menu-text::before {
+     content: "✦";
+     color: #8e70d1;
+     margin-right: 6px;
+     font-size: 13px;
+
+}
+ /* картинка Скарамуччи в блоке "о себе" вместо фото */
+ .left-menu .text-center {
+     display: block !important;
+     height: 280px !important;
+     margin: 14px !important;
+     border-radius: 14px !important;
+     overflow: hidden !important;
+     border: 1.5px solid #bda9eb !important;
+     box-shadow: 0 0 0 4px #f5f1ff, 4px 4px 0 rgba(126,97,191,.18) !important;
+     background-image: linear-gradient(to bottom, rgba(255,255,255,.05), rgba(238,233,255,.15)), url("https://i.pinimg.com/1200x/3c/c0/82/3cc082eca5cbc2a6d83beccad1050ff6.jpg") !important;
+     background-size: cover !important;
+     background-position: center 35% !important;
+     position: relative !important;
+
+}
+ .left-menu .text-center img {
+     display: none !important;
+
+}
+ .left-menu .text-center::after {
+     content: "HANI";
+     position: absolute;
+     bottom: 12px;
+     right: 12px;
+     background: rgba(255,255,255,.85);
+     border: 1px solid #cbb9f2;
+     border-radius: 999px;
+     padding: 2px 8px;
+     font-size: 11px;
+     font-weight: 700;
+     color: #8b6bd6;
+
+}
+ /* рамки на аватарки */
+ img[src*="/avatars/"], img[src*="/avatar/"], img[src*="/userpic/"], img.w-100 {
+     border: 2px solid #bda9eb !important;
+     border-radius: 12px !important;
+     padding: 3px !important;
+     background: #f7f3ff !important;
+     box-shadow: 0 0 0 3px #ffffff, 3px 3px 0 rgba(126,97,191,.20) !important;
+     object-fit: cover !important;
+
+}
+ /* чтобы рамка не применялась к скрытому фото профиля */
+ .left-menu .text-center img.w-100 {
+     display: none !important;
+
+}
+ /* списки */
+ ul, ol {
+     list-style: none !important;
+
+}
+ li {
+     position: relative !important;
+     padding-left: 22px !important;
+
+}
+ li::before {
+     content: "✦";
+     position: absolute;
+     left: 2px;
+     top: 0;
+     color: #8e70d1;
+     font-size: 13px;
+
+}
+ /* textarea фон */
+ .textareabg {
+     background: transparent !important;
+     box-shadow: none !important;
+
+}
+ .post-content.blog_total_counter {
+     display: none !important;
+
+}
+ /* аудиоплеер */
+ #beon-fnplayer {
+     height: 18px !important;
+     background: #f8f4ff !important;
+     border: 1.5px solid #bda9eb !important;
+     border-radius: 999px !important;
+     box-shadow: inset 0 1px 0 rgba(255,255,255,.9), 0 0 0 2px #ffffff, 2px 2px 0 rgba(126,97,191,.15) !important;
+     padding: 2px !important;
+     overflow: hidden !important;
+
+}
+ /* внутренняя дорожка */
+ #fnplayer-slider {
+     height: 10px !important;
+     background: linear-gradient(90deg, #ddd1ff, #f1ecff) !important;
+     border-radius: 999px !important;
+     border: 1px solid #cab8f1 !important;
+     box-shadow: inset 0 1px 2px rgba(126,97,191,.18) !important;
+
+}
+ /* заполнение */
+ #fnplayer-slider .ui-slider-range, #fnplayer-slider .slider-fill, #fnplayer-slider div {
+     background: linear-gradient(90deg, #b9a5e8, #9d83dd) !important;
+     border-radius: 999px !important;
+
+}
+ /* бегунок */
+ #fnplayer-slider .ui-slider-handle, #fnplayer-slider a {
+     width: 14px !important;
+     height: 14px !important;
+     top: -3px !important;
+     background: #ffffff !important;
+     border: 2px solid #9d83dd !important;
+     border-radius: 50% !important;
+     box-shadow: 1px 1px 0 rgba(126,97,191,.25) !important;
+
+}
+ /* громкость — капсула с движущейся точкой */
+ #fnplayer-volume {
+     width: 32px !important;
+     height: 8px !important;
+     background: #e6dcff !important;
+     border: 1px solid #bda9eb !important;
+     border-radius: 999px !important;
+     position: relative !important;
+     margin-top: 1px !important;
+
+}
+ #fnplayer-volume-mask {
+     display: none !important;
+
+}
+ #fnplayer-volume-inner {
+     width: 100% !important;
+     height: 100% !important;
+     background: linear-gradient(90deg, #d8ccfa, #b9a5e8) !important;
+     border-radius: 999px !important;
+
+}
+ #fnplayer-volume a, #fnplayer-volume .ui-slider-handle {
+     display: block !important;
+     width: 8px !important;
+     height: 8px !important;
+     background: #ffffff !important;
+     border: 1.5px solid #9d83dd !important;
+     border-radius: 50% !important;
+     top: -1px !important;
+     box-shadow: 1px 1px 0 rgba(126,97,191,.25) !important;
+
+}
+ /* блок комментариев */
+ .comment-content, div[id^="comment_"], div.comment {
+     background-color: #fbf9ff !important;
+     background-image: radial-gradient(circle at 18px 18px, rgba(142,112,209,.12) 1.3px, transparent 2px), radial-gradient(circle at 88% 12%, rgba(207,192,245,.36) 0, transparent 140px), linear-gradient(135deg, #ffffff 0%, #fbf9ff 45%, #f2ecff 100%) !important;
+     background-size: 26px 26px, auto, auto !important;
+     border: 1.5px solid #bda9eb !important;
+     border-radius: 16px !important;
+     box-shadow: 0 0 0 4px rgba(245,241,255,.95), 4px 4px 0 rgba(126,97,191,.18), inset 0 1px 0 rgba(255,255,255,.9) !important;
+     padding: 14px !important;
+     margin: 14px 0 !important;
+     position: relative !important;
+     overflow: hidden !important;
+
+}
+ /* верхняя полоска у комментария */
+ .comment-content::before, div[id^="comment_"]::before, div.comment::before {
+     content: "";
+     position: absolute;
+     left: 12px;
+     right: 12px;
+     top: 0;
+     height: 4px;
+     background: linear-gradient(90deg, #b9a5e8, #e3d9ff, #b9a5e8);
+     border-radius: 0 0 12px 12px;
+
+}
+ /* звёздочка справа */
+ .comment-content::after, div[id^="comment_"]::after, div.comment::after {
+     content: "✦";
+     position: absolute;
+     right: 12px;
+     top: 8px;
+     color: rgba(126,97,191,.40);
+     font-size: 18px;
+     font-weight: 800;
+
+}
+ /* заголовок "Всего ответов" */
+ h2, h3 {
+     color: #6f55a8 !important;
+
+}
+ /* ===== ШРИФТЫ ===== */
+ body, p, span, div, td, li, a, textarea, input, select, button, h1, h2, h3, h4, .left-menu-text, .post-title, .post-title-user, .post-title-date, .blog__about h3 {
+     font-family: 'Nunito', Calibri, Arial, sans-serif !important;
+
+}
+ /* текст записей и комментариев */
+ .post-text, .comment-text, .comment-base {
+     font-family: 'Nunito', Calibri, Arial, sans-serif !important;
+
+}
+ /* верхнее меню BeOn */
+ div.menu, .navbar, .top-menu, #navbar, #menu {
+     background: #fbf9ff !important;
+     border: 1.5px solid #bda9eb !important;
+     border-radius: 0 0 14px 14px !important;
+     box-shadow: 0 0 0 4px #f5f1ff, 3px 3px 0 rgba(126,97,191,.16) !important;
+     font-family: 'Nunito', Calibri, Arial, sans-serif !important;
+
+}
+ /* ссылки в верхнем меню */
+ div.menu a, .navbar a, .top-menu a, #navbar a, #menu a {
+     color: #7658ba !important;
+     font-family: 'Nunito', Calibri, Arial, sans-serif !important;
+     font-weight: 800 !important;
+     text-decoration: none !important;
+
+}
+ /* звёздочки/маркеры в верхнем меню */
+ div.menu li::before, .navbar li::before, .top-menu li::before, #navbar li::before, #menu li::before {
+     content: "✦" !important;
+     color: #8e70d1 !important;
+     font-size: 11px !important;
+
+}
+ /* верхнее меню: сдвиг левее */
+ .pc-menu {
+     position: relative !important;
+     left: 0 !important;
+
+}
+ /* подпись под логотипом */
+ /* подпись под логотипом */
+ .crumb-item {
+     display: inline-block !important;
+     margin: 10px 0 0 18px !important;
+     padding: 4px 12px !important;
+     background: rgba(255,255,255,.65) !important;
+     border: 1px solid #d6c8f7 !important;
+     border-radius: 999px !important;
+     color: #8e70d1 !important;
+     font-size: 13px !important;
+     font-weight: 700 !important;
+     font-style: italic !important;
+     opacity: .9 !important;
+
+}
+ /* логотип BeOn.Fun */
+ a.navbar-brand, .navbar-brand, a[href="https://beon.fun"] {
+     font-family: 'Nunito', Calibri, Arial, sans-serif !important;
+     font-size: 22px !important;
+     font-weight: 800 !important;
+     color: #7b62bf !important;
+     letter-spacing: .2px !important;
+     text-shadow: 0 0 4px rgba(255,255,255,.9), 0 0 8px rgba(142,112,209,.22) !important;
+
+}
+ .m2 {
+     font-size: 12px !important;
+     opacity: .75 !important;
+
+}
+ .avatar-select-label-selected {
+     border: 4px solid #8e70d1 !important;
+     box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px #b9a5e8, 0 0 15px rgba(142,112,209,.8) !important;
+     transform: scale(1.08) !important;
+
+}
+ /* ===== ДЕКОР: авторский сиреневый стиль ===== */
+ /* мягкие блёстки в углах записей */
+ div.post-content::after {
+     content: "✦";
+     position: absolute;
+     right: 14px;
+     top: 10px;
+     color: rgba(126,97,191,.40);
+     font-size: 22px;
+     font-weight: 800;
+     text-shadow: -18px 28px 0 rgba(185,165,232,.20), -44px 8px 0 rgba(207,192,245,.22);
+
+}
+ /* маленькая луна в шапке */
+ .navbar::after {
+     content: "☾";
+     position: absolute;
+     left: 180px;
+     top: 18px;
+     color: rgba(126,97,191,.40);
+     font-size: 24px;
+     font-weight: 800;
+     text-shadow: 0 0 10px rgba(142,112,209,.25);
+
+}
+ /* полароидный эффект для картинки "о себе" */
+ .left-menu .text-center {
+     background-color: #ffffff !important;
+     padding: 8px !important;
+     box-sizing: border-box !important;
+
+}
+ /* ленточка на блоке "о себе" */
+ .left-menu .text-center::before {
+     content: "";
+     position: absolute;
+     left: 50%;
+     top: -8px;
+     width: 70px;
+     height: 18px;
+     transform: translateX(-50%) rotate(-2deg);
+     background: rgba(216,204,250,.75);
+     border: 1px solid rgba(189,169,235,.8);
+     border-radius: 4px;
+     box-shadow: 1px 1px 0 rgba(126,97,191,.12);
+     z-index: 2;
+
+}
+ /* мягкое свечение заголовков */
+ h3.left-menu-text, .post-title, h2, h3 {
+     text-shadow: 0 0 8px rgba(142,112,209,.18);
+
+}
+ /* картинки внутри постов — как вклеенные */
+ .post-content img:not(.avatar-select-label) {
+     border-radius: 12px !important;
+     box-shadow: 0 0 0 4px #ffffff, 4px 4px 0 rgba(126,97,191,.16) !important;
+
+}
+ /* большой полупрозрачный Скарамучча */
+ body::before {
+     content: "" !important;
+     display: block !important;
+     position: fixed !important;
+     right: -170px !important;
+     bottom: -180px !important;
+     width: 900px !important;
+     height: 900px !important;
+     background-image: url("https://i.pinimg.com/736x/19/34/fe/1934febe626381790b789f00646b2949.jpg") !important;
+     background-size: contain !important;
+     background-repeat: no-repeat !important;
+     background-position: right bottom !important;
+     opacity: .1 !important;
+     filter: grayscale(15%) brightness(1.08) contrast(.95) !important;
+     -webkit-mask-image: linear-gradient( to right, transparent 0%, transparent 28%, black 55%, black 100% );
+     mask-image: linear-gradient( to right, transparent 0%, transparent 28%, black 55%, black 100% );
+     pointer-events: none !important;
+     z-index: 1 !important;
+
+}
+ /* ========================================================= HANI DESIGN 2.0 — украшения, анимации, hover, blob Вставлено аккуратно в конец. Старый код не трогать. ========================================================= */
+ /* фоновый паттерн оставлен статичным */
+ /* мягкие цветные пятна на фоне */
+ html::before, html::after {
+     content: "" !important;
+     position: fixed !important;
+     display: block !important;
+     border-radius: 50% !important;
+     pointer-events: none !important;
+     z-index: 0 !important;
+     filter: blur(55px) !important;
+
+}
+ html::before {
+     width: 460px !important;
+     height: 460px !important;
+     left: -160px !important;
+     top: 28% !important;
+     background: radial-gradient(circle, rgba(216,204,250,.45), transparent 68%) !important;
+
+}
+ html::after {
+     width: 520px !important;
+     height: 520px !important;
+     right: -190px !important;
+     top: 8% !important;
+     background: radial-gradient(circle, rgba(185,165,232,.34), transparent 70%) !important;
+
+}
+ /* мерцание звёздочек */
+ @keyframes haniSparkle {
+     0%, 100% {
+         opacity: .35;
+         transform: scale(1) rotate(0deg) !important;
+         filter: drop-shadow(0 0 0 rgba(185,165,232,0)) !important;
+
+    }
+     50% {
+         opacity: 1;
+         transform: scale(1.35) rotate(14deg) !important;
+         filter: drop-shadow(0 0 8px rgba(185,165,232,.95)) !important;
+
+    }
+
+}
+ div.post-content::after, .comment-content::after, div[id^="comment_"]::after, div.comment::after, .left-menu-text::before, li::before {
+     animation: haniSparkle 2.4s ease-in-out infinite !important;
+     transform-origin: center !important;
+     will-change: transform, opacity, filter !important;
+
+}
+ /* чуть более заметный декор у записи */
+ div.post-content::after {
+     color: rgba(126,97,191,.40) !important;
+     text-shadow: -18px 28px 0 rgba(185,165,232,.24), -44px 8px 0 rgba(207,192,245,.28), 0 0 10px rgba(185,165,232,.35) !important;
+
+}
+ /* стеклянные переливающиеся кнопки */
+ button, input[type="submit"], input[type="button"] {
+     background: linear-gradient(120deg, rgba(185,165,232,.95), rgba(232,222,255,.95), rgba(157,131,221,.95)) !important;
+     background-size: 220% auto !important;
+     border: 1px solid rgba(146,117,208,.75) !important;
+     box-shadow: inset 0 1px 0 rgba(255,255,255,.65), 2px 2px 0 #7d61bf, 0 0 12px rgba(185,165,232,.20) !important;
+     transition: background-position .55s ease, transform .28s ease, box-shadow .28s ease !important;
+
+}
+ button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+     background-position: right center !important;
+     transform: translateY(-2px) !important;
+     box-shadow: inset 0 1px 0 rgba(255,255,255,.75), 2px 4px 0 #7d61bf, 0 0 18px rgba(185,165,232,.45) !important;
+
+}
+ /* поля тоже немного мягче при фокусе */
+ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="search"]:focus, select:focus {
+     outline: none !important;
+     border-color: #9d83dd !important;
+     box-shadow: 0 0 0 3px rgba(216,204,250,.55), 0 0 16px rgba(185,165,232,.30) !important;
+
+}
+ /* ссылки — мягкое сияние при наведении */
+ a {
+     transition: color .25s ease, text-shadow .25s ease !important;
+
+}
+ a:hover {
+     text-shadow: 0 0 8px rgba(142,112,209,.28) !important;
+
+}
+ /* ========================================================= ФИНАЛЬНАЯ ПОЛИРОВКА: статичный фон без плавающих блоков ========================================================= */
+ body {
+     animation: none !important;
+
+}
+ html::before, html::after {
+     animation: none !important;
+     transform: none !important;
+
+}
+ body::before {
+     animation: none !important;
+     transform: none !important;
+     right: -170px !important;
+     bottom: -180px !important;
+     width: 900px !important;
+     height: 900px !important;
+     opacity: .1 !important;
+
+}
+ body::after {
+     animation: none !important;
+     transform: none !important;
+
+}
+ /* декоративные сердечки / луны / облачка поверх фона */
+ body::after {
+     content: "♡ ☁ ✦ ☾ ♡" !important;
+     display: block !important;
+     position: fixed !important;
+     left: 4% !important;
+     top: 12% !important;
+     width: 90% !important;
+     height: auto !important;
+     background: none !important;
+     filter: none !important;
+     border-radius: 0 !important;
+     color: rgba(126,97,191,.40) !important;
+     font-size: 28px !important;
+     letter-spacing: 34px !important;
+     line-height: 1.4 !important;
+     white-space: nowrap !important;
+     pointer-events: none !important;
+     z-index: 2 !important;
+     text-shadow: 180px 160px 0 rgba(185,165,232,.22), 420px 40px 0 rgba(142,112,209,.18), 620px 260px 0 rgba(207,192,245,.26), 60px 420px 0 rgba(185,165,232,.22) !important;
+
+}
+ /* ===== ФИНАЛЬНАЯ ЧИСТКА ДЕКОРА ===== */
+ body, body::before, body::after, html::before, html::after {
+     animation: none !important;
+
+}
+ body::before {
+     transform: none !important;
+
+}
+ html::before, html::after {
+     transform: none !important;
+
+}
+ /* чтобы декоративные символы не наследовали blur/background от blob */
+ body::after {
+     background: none !important;
+     filter: none !important;
+     opacity: 1 !important;
+
+}
+ /* РАМКИ ЧУТЬ ВЫРАЗИТЕЛЬНЕЕ */
+ div.post-content {
+     border: 1.5px solid #bda9eb !important;
+     box-shadow: 0 0 0 4px #f5f1ff, 0 0 0 1px rgba(189,169,235,.25), 3px 3px 0 rgba(126,97,191,.18) !important;
+
+}
+ .comment-content, div[id^="comment_"], div.comment {
+     border: 1.5px solid #bda9eb !important;
+     box-shadow: 0 0 0 4px #f5f1ff, 0 0 0 1px rgba(189,169,235,.22), 3px 3px 0 rgba(126,97,191,.18) !important;
+
+}
+ @media (max-width: 768px) {
+     body::after {
+         display: none !important;
+         content: none !important;
+
+    }
+
+}
+
+/* картинки поверх декора */
+.post-content img,
+.post-content a img {
+    position: relative !important;
+    z-index: 999 !important;
+}
+
+/* аватарки поверх декора */
+img[src*="/avatars/"],
+img[src*="/avatar/"],
+img[src*="/userpic/"],
+img.w-100,
+.comment-avatar img,
+.post-avatar img {
+    position: relative !important;
+    z-index: 999 !important;
+}
+
+
+/* на телефоне Скарамуччу лучше убрать, чтобы не лез на посты */
+@media (max-width: 768px) {
+    body::before {
+        display: none !important;
+        content: none !important;
+    }
+}
